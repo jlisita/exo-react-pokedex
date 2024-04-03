@@ -73,15 +73,14 @@ const LastCapturedPokemons = () => {
         },
       ];
 
-      const LastCapturedPokemons = pokemons.sort((a,b)=> {
+      const lastCapturedPokemons = pokemons.sort((a,b)=> {
         return new Date(b.capturedAt) - new Date(a.capturedAt); 
       }).slice(0,3);
-      console.log(LastCapturedPokemons);
 
     return (
         <section>
             <h2>Derniers Pokemons capturés</h2>
-            {LastCapturedPokemons.map((element) => {
+            {lastCapturedPokemons.map((element) => {
                 return (
                     <>
                         <img src={element.image} alt="image" />
