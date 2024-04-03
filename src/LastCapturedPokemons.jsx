@@ -1,3 +1,5 @@
+import Pokemon from './Pokemon'
+
 const LastCapturedPokemons = ({pokemons}) => {
 
       const lastCapturedPokemons = pokemons.sort((a,b)=> {
@@ -7,14 +9,9 @@ const LastCapturedPokemons = ({pokemons}) => {
     return (
         <section>
             <h2>Derniers Pokemons capturés</h2>
-            {lastCapturedPokemons.map((element) => {
+            {lastCapturedPokemons.map((pokemon) => {
                 return (
-                    <>
-                        <img src={element.image} alt="image" />
-                        <h3>{element.name}</h3>
-                        <p>type: {element.type}</p>
-                        <p>date de capture: {element.capturedAt}</p>
-                    </>
+                    <Pokemon pokemon = {pokemon}/>
                 );
             })}
         </section>

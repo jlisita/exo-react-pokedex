@@ -1,3 +1,5 @@
+import Pokemon from './Pokemon'
+
 const FirePokemons = ({pokemons}) => {
 
       const firePokemons = pokemons.filter((element) => {
@@ -8,14 +10,9 @@ const FirePokemons = ({pokemons}) => {
     return (
         <section>
             <h2>Pokemons de type Feu</h2>
-            {firePokemons.map((element) => {
+            {firePokemons.map((pokemon) => {
                 return (
-                    <>
-                        <img src={element.image} alt="image" />
-                        <h3>{element.name}</h3>
-                        <p>type: {element.type}</p>
-                        <p>date de capture: {element.capturedAt}</p>
-                    </>
+                    <Pokemon pokemon = {pokemon}/>
                 );
             })}
         </section>
