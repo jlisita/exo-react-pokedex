@@ -6,6 +6,7 @@ import RandomPokemon from './RandomPokemon ';
 import FirePokemons from './FirePokemons'
 import ListAllPokemons from './ListAllPokemons';
 import Welcome from './Welcome';
+import Counter from './Counter';
 
 const App = () => {
 
@@ -90,6 +91,7 @@ const App = () => {
       <RandomPokemon pokemons = {pokemons}/>
       <FirePokemons pokemons = {pokemons}/>
       <ListAllPokemons pokemons = {pokemons}/>
+      <Counter/>
       <Footer/>
     </div>
   );

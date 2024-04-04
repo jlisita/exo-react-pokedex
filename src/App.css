@@ -52,12 +52,14 @@ section
 
 .pokemonCard
 {
-  width: 250px;
+  width: 230px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   background-color: rgb(240, 248, 255);
+  border: 10px solid rgb(143, 203, 255);
   padding:15px;
 
 }
