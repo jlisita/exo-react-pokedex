@@ -10,7 +10,7 @@ const Counter = () => {
 
     return (
         <section>
-            <button onClick = {updateCounter}>compteur</button>
+            <button onClick = {updateCounter}>Compteur</button>
             <p>{nbrClicks}</p>
         </section>
     );
