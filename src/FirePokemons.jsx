@@ -10,11 +10,13 @@ const FirePokemons = ({pokemons}) => {
     return (
         <section>
             <h2>Pokemons de type Feu</h2>
-            {firePokemons.map((pokemon) => {
-                return (
-                    <Pokemon pokemon = {pokemon}/>
-                );
-            })}
+            <div className='pokemons'>
+                {firePokemons.map((pokemon) => {
+                    return (
+                        <Pokemon pokemon = {pokemon}/>
+                    );
+                })}
+            </div>
         </section>
     );
 };

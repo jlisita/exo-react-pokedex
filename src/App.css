@@ -36,6 +36,28 @@
     transform: rotate(360deg);
   }
 }
+section
+{
+  text-align: center;
+}
+
+.pokemons
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pokemon
+{
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
 
 .App-footer {
   background-color: #282c34;

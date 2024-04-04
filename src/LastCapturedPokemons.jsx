@@ -9,11 +9,13 @@ const LastCapturedPokemons = ({pokemons}) => {
     return (
         <section>
             <h2>Derniers Pokemons capturés</h2>
-            {lastCapturedPokemons.map((pokemon) => {
-                return (
-                    <Pokemon pokemon = {pokemon}/>
-                );
-            })}
+            <div className='pokemons'>
+                {lastCapturedPokemons.map((pokemon) => {
+                    return (
+                        <Pokemon pokemon = {pokemon}/>
+                    );
+                })}
+            </div>
         </section>
     );
 };
