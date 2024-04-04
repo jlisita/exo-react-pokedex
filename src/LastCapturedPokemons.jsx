@@ -12,7 +12,7 @@ const LastCapturedPokemons = ({pokemons}) => {
             <div className='pokemons'>
                 {lastCapturedPokemons.map((pokemon) => {
                     return (
-                        <Pokemon pokemon = {pokemon}/>
+                        <Pokemon pokemon = {pokemon} displayImg = {true}/>
                     );
                 })}
             </div>

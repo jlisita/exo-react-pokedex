@@ -10,7 +10,7 @@ const RandomPokemon  = ({pokemons}) => {
         <section>
             <h2>Pokemon aléatoire</h2>
             <div className='pokemons'>
-                <Pokemon pokemon = {randomPokemon}/>  
+                <Pokemon pokemon = {randomPokemon} displayImg = {true}/>  
             </div> 
         </section>
     );

@@ -13,7 +13,7 @@ const FirePokemons = ({pokemons}) => {
             <div className='pokemons'>
                 {firePokemons.map((pokemon) => {
                     return (
-                        <Pokemon pokemon = {pokemon}/>
+                        <Pokemon pokemon = {pokemon} displayImg = {true}/>
                     );
                 })}
             </div>
