@@ -5,6 +5,7 @@ import LastCapturedPokemons from './LastCapturedPokemons'
 import RandomPokemon from './RandomPokemon ';
 import FirePokemons from './FirePokemons'
 import ListAllPokemons from './ListAllPokemons';
+import Welcome from './Welcome';
 
 const App = () => {
 
@@ -84,6 +85,7 @@ const App = () => {
   return (
     <div className = ".App">
       <Header/>
+      <Welcome/>
       <LastCapturedPokemons pokemons = {pokemons}/>
       <RandomPokemon pokemons = {pokemons}/>
       <FirePokemons pokemons = {pokemons}/>
