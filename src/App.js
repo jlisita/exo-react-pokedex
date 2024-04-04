@@ -4,6 +4,7 @@ import Footer from './Footer';
 import LastCapturedPokemons from './LastCapturedPokemons'
 import RandomPokemon from './RandomPokemon ';
 import FirePokemons from './FirePokemons'
+import ListAllPokemons from './ListAllPokemons';
 
 const App = () => {
 
@@ -86,6 +87,7 @@ const App = () => {
       <LastCapturedPokemons pokemons = {pokemons}/>
       <RandomPokemon pokemons = {pokemons}/>
       <FirePokemons pokemons = {pokemons}/>
+      <ListAllPokemons pokemons = {pokemons}/>
       <Footer/>
     </div>
   );
