@@ -10,7 +10,7 @@ const FirePokemons = ({pokemons}) => {
     return (
         <section>
             <h2>Pokemons de type Feu</h2>
-            <div className='pokemons'>
+            <div className='cardGallery'>
                 {firePokemons.map((pokemon) => {
                     return (
                         <Pokemon pokemon = {pokemon} displayImg = {true}/>

@@ -9,7 +9,7 @@ const LastCapturedPokemons = ({pokemons}) => {
     return (
         <section>
             <h2>Derniers Pokemons capturés</h2>
-            <div className='pokemons'>
+            <div className='cardGallery'>
                 {lastCapturedPokemons.map((pokemon) => {
                     return (
                         <Pokemon pokemon = {pokemon} displayImg = {true}/>
