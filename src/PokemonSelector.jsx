@@ -1,17 +1,33 @@
 import {useState} from "react";
 
-const PokemonSelector = () => {
+const PokemonSelector = ({pokemons}) => {
 
     const[pokemonName,setPokemonName] = useState("");
+    const[message,setMessage] = useState("");
 
-    const pokemonNameUpdate = (e) => {
-        setPokemonName(e.currentTarget.value);
+    const addPokemonName = (e) => {
+
+        if(pokemons.find((pokemon) => {
+            return pokemon.name == e.currentTarget.value;
+        }) == undefined)
+        {
+            console.log("nouveau pokémon");
+            setPokemonName(e.currentTarget.value);
+            setMessage(`Allez ${pokemonName}, à l'attaque !`)
+        }
+        else
+        {
+            console.log("existe déjà");
+            setPokemonName("");
+            setMessage(`${e.currentTarget.value} existe déjà !`)
+        }   
     };
 
     return (
         <section>
-            <label name="name">nom du pokemon <input type = "text" onChange = {pokemonNameUpdate} ></input> </label>
-            <p>Allez {pokemonName}, à l'attaque !</p>
+            <h2>Ajout de nouveau Pokémon</h2>
+            <label name="name"> Choisissez le nom du pokémon à ajouter dans votre team: <input type = "text" onChange = {addPokemonName} ></input> </label>
+            <p>{message}</p>
         </section>
     );
 };

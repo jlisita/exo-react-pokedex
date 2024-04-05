@@ -93,7 +93,7 @@ const App = () => {
       <FirePokemons pokemons = {pokemons}/>
       <ListAllPokemons pokemons = {pokemons}/>
       <Counter/>
-      <PokemonSelector/>
+      <PokemonSelector pokemons = {pokemons}/>
       <Footer/>
     </div>
   );
