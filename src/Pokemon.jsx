@@ -1,5 +1,13 @@
+import { useState } from 'react';
 import './App.css';
+
 const Pokemon = ({pokemon, displayImg}) => {
+
+    const [nbrLikes, addLike] = useState(0);
+
+    const updateLikes = () => {
+        addLike(nbrLikes+1);
+    };
 
     const className = (displayImg == true)  ? "pokemonCard" : ""
 
@@ -9,6 +17,8 @@ const Pokemon = ({pokemon, displayImg}) => {
             <h3>{pokemon.name}</h3>
             <p>type: {pokemon.type}</p>
             <p>date de capture: {pokemon.capturedAt}</p>
+            <p>Ce pokémon a {nbrLikes} likes</p>
+            <button onClick = {updateLikes}>Like</button>
         </article>
     );
 };
