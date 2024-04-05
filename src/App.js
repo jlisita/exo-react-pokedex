@@ -7,6 +7,7 @@ import FirePokemons from './FirePokemons'
 import ListAllPokemons from './ListAllPokemons';
 import Welcome from './Welcome';
 import Counter from './Counter';
+import PokemonSelector from './PokemonSelector';
 
 const App = () => {
 
@@ -92,6 +93,7 @@ const App = () => {
       <FirePokemons pokemons = {pokemons}/>
       <ListAllPokemons pokemons = {pokemons}/>
       <Counter/>
+      <PokemonSelector/>
       <Footer/>
     </div>
   );
