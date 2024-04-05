@@ -11,13 +11,11 @@ const PokemonSelector = ({pokemons}) => {
             return pokemon.name == e.currentTarget.value;
         }) == undefined)
         {
-            console.log("nouveau pokémon");
             setPokemonName(e.currentTarget.value);
-            setMessage(`Allez ${pokemonName}, à l'attaque !`)
+            setMessage(`Allez ${e.currentTarget.value}, à l'attaque !`)
         }
         else
         {
-            console.log("existe déjà");
             setPokemonName("");
             setMessage(`${e.currentTarget.value} existe déjà !`)
         }   
