@@ -8,6 +8,7 @@ import ListAllPokemons from './ListAllPokemons';
 import Welcome from './Welcome';
 import Counter from './Counter';
 import PokemonSelector from './PokemonSelector';
+import Pokedex from './Pokedex';
 
 const App = () => {
 
@@ -88,6 +89,7 @@ const App = () => {
     <div className = ".App">
       <Header/>
       <Welcome/>
+      <Pokedex/>
       <LastCapturedPokemons pokemons = {pokemons}/>
       <RandomPokemon pokemons = {pokemons}/>
       <FirePokemons pokemons = {pokemons}/>

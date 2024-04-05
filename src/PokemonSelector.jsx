@@ -24,7 +24,7 @@ const PokemonSelector = ({pokemons}) => {
     return (
         <section>
             <h2>Ajout de nouveau Pokémon</h2>
-            <label name="name"> Choisissez le nom du pokémon à ajouter dans votre team: <input type = "text" onChange = {addPokemonName} ></input> </label>
+            <label> Choisissez le nom du pokémon à ajouter dans votre team: <input type = "text" name="name" onChange = {addPokemonName} ></input> </label>
             <p>{message}</p>
         </section>
     );
