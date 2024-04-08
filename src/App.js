@@ -9,6 +9,7 @@ import Welcome from './Welcome';
 import Counter from './Counter';
 import PokemonSelector from './PokemonSelector';
 import Pokedex from './Pokedex';
+import PokemonsFromApi from './PokemonsFromApi';
 
 const App = () => {
 
@@ -96,6 +97,7 @@ const App = () => {
       <ListAllPokemons pokemons = {pokemons}/>
       <Counter/>
       <PokemonSelector pokemons = {pokemons}/>
+      <PokemonsFromApi/>
       <Footer/>
     </div>
   );
